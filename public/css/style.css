@@ -1,0 +1,434 @@
+/* Chất vấn */
+
+    .icon {
+        font-size: 18px;
+        opacity: 0.5;
+    }
+
+    .icon:hover {
+        font-size: 18px;
+        font-weight: bold;
+        opacity: 1;
+    }
+
+    .header {
+        font-weight: bold;
+    }
+    .header .col-sm-4 {
+        padding-top: 5px;
+    }
+    #ngayhop-chatvan table>thead:first-child>tr:first-child>th:first-child
+    {
+        width: 45%;
+    }
+
+    #ngayhop-chatvan table td {
+        vertical-align: middle;
+    }
+
+    #ngayhop-chatvan table>thead>tr>th {
+        border-color: #ddd;
+        border-bottom: 1px solid #ddd;
+        background-color: rgb(250, 252, 233);
+        text-align: center;
+    }
+    #ngayhop-chatvan .table>tbody>tr>td,
+    #ngayhop-chatvan .table>tbody>tr>th,
+    #ngayhop-chatvan .table>tfoot>tr>td,
+    #ngayhop-chatvan .table>tfoot>tr>th {
+        border-color: #ddd;
+    }
+
+    #ngayhop-chatvan a, a:focus, a:hover {
+        text-decoration: none;
+    }
+    .icon-xemkq {
+        color: #22a7f0;
+    }
+    .icon-batdau, .icon-vaitro-kyhop, .icon-add-daibieu {
+        color: green;
+    }
+    .icon-sua {
+        color: blue;
+    }
+    .icon-xoa , .icon-ketthuc{
+        color: red;
+    }
+    .icon-duyet , .icon-add-khachmoi, .icon-chuyentt {
+        color: rgb(247, 144, 9);
+    }
+    .tt-phien-chuabatdau, .tt-chuabieuquyet, .tt-chatvan-chochatvan, .tt-khongsudung, .tt-khonghoatdong {
+        background-color: #d7d7d7 !important;
+    }
+
+    .tt-phien-dangdienra, .tt-chatvan-dangchatvan, .tt-dangbieuquyet, .tt-sapdienra {
+        background-color: #22a7f0 !important;
+    }
+
+    .tt-phien-dahoanthanh, .tt-chatvan-dachatvan, .tt-dabieuquyet, .vaitro-daibieu, .tt-dadienra, .tt-hoatdong {
+        background-color: #2ecc71 !important;
+    }
+
+    .select2.select2-container.select2-container--default {
+        width: 100% !important;
+    }
+
+    .tt-chatvan-choduyet, .vaitro-khachmoi {
+        background-color: rgb(247, 144, 9) !important;
+    }
+
+    .trang-thai span {
+        font-size: 10px !important;
+        font-weight: bold;
+        font-style: italic;
+        width: 101px;
+    }
+
+    .xy-ly {
+        width: 200px;
+    }
+    .with-100px {
+        width: 100px;
+    }
+    .with-75px {
+        width: 75px;
+    }
+    .with-40px {
+        width: 40px;
+    }
+
+    .with-20px {
+        width: 20px;
+    }
+
+    .with-10px {
+        width: 20px;
+    }
+/* End Chất vấn */
+
+/* Điểm danh */
+    #buoihop-diemdanh{
+        margin-top: 10px;
+    }
+    #buoihop-diemdanh .row:first-child{
+        font-weight: bold;
+    }
+    .btn-diemdanh {
+        width: 100px;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #7a7979;
+    }
+/* End điểm danh */
+
+/* Trình chiếu điểm danh */
+    .content-trinhchieu {
+        margin-top: 8%;
+        color: red;
+    }
+    .ten-hoidong {
+        font-size: 52px;
+        font-weight: bold;
+    }
+
+    .ten-khoahop {
+        font-size: 46px;
+        font-weight: bold;
+    }
+
+    .ten-kyhop {
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+    .ten-diadiem {
+        font-size: 36px;
+        font-style: italic;
+    }
+    .text-center {
+        text-align: center;
+    }
+
+    .kq-diem-danh, .tong-daibieu {
+        font-size: 120px;
+        font-weight: bold;
+        color: #0051ff;;
+    }
+
+    .text-daibieu {
+        font-size: 36px;
+    }
+/* End trình chiếu điểm danh */
+
+/* Biểu quyết */
+    .required {
+        color: red;
+    }
+    #ds-bieuquyet .row:first-child{
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10px;
+    }
+/* End biểu quyết */
+
+/* Trình chiếu biểu quyết */
+    .trinh-chieu-bieuquyet {
+        width: 100% !important;
+        font-size: 48px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .trinh-chieu-bieuquyet .row  {
+        height: 16.66%;
+    }
+
+    .trinh-chieu-bieuquyet .col-sm-6 ,.trinh-chieu-bieuquyet .col-sm-3,.trinh-chieu-bieuquyet .col-sm-12  {
+        height: 100%;
+    }
+
+    .ketqua {
+        background-color: #2ecc71;
+    }
+
+    .soluong {
+        font-size: 72px;
+        text-align: center;
+    }
+
+    .tyle span{
+        font-size: 72px;
+    }
+    #dongho {
+        font-size: 84px;
+        color: #ff9800d9;
+    }
+
+    .color-red {
+        color: red !important;
+    }
+
+    .thoigian, .tongso, .dongy, .khongdongy, .khongbieuquyet {
+        background-color: #007bff;
+    }
+
+    .trinh-chieu-bieuquyet .row div {
+        border: 1px solid white;
+    }
+
+    .trinh-chieu-bieuquyet .row {
+        margin-top: auto;
+    }
+
+    .display-table {
+        display: table;
+    }
+
+    .vertical-middle {
+        display: table-cell;
+        vertical-align: middle;
+    }
+/* End trình chiếu biểu quyết */
+
+/* Trình chiếu chất vấn */
+.content-trinhchieu-chatvan {
+    width: 100% !important;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+}
+.footer-trinhchieu {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    background:#6cf;
+    font-size: 36px;
+ }
+.content-trinhchieu-chatvan .title {
+    background-color: #2ecc71;
+}
+/* .content-trinhchieu-chatvan .dongho {
+    color: red;
+} */
+.content-trinhchieu-chatvan table {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.content-trinhchieu-chatvan td {
+    vertical-align: middle !important;
+}
+
+.with-30 {
+    width: 30%;
+}
+
+.content-trinhchieu-chatvan .col-sm-12 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+/* End trình chiếu chất vấn */
+
+/* Loading  */
+    @keyframes spinner {
+        to {transform: rotate(360deg);}
+    }
+
+    .spinner {
+        display: none;
+    }
+    .spinner:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 46%;
+        width: 40px;
+        height: 40px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border-top: 2px solid #07d;
+        border-right: 2px solid transparent;
+        animation: spinner .6s linear infinite;
+        z-index: 9999999999;
+    }
+
+
+    #overlay {
+        position: fixed;
+        display: none;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+        cursor: pointer;
+    }
+/* End loading */
+
+/* tài liệu */
+.hover-cursor:hover {
+    cursor: pointer;
+    color: #22a7f0;
+}
+
+.hover-cursor.active {
+    color: #22a7f0;
+}
+
+#edit-folder-div {
+    text-align: right;
+}
+
+#viewFileModal .modal-dialog {
+    width: 90% !important;
+}
+
+#suaLichHopModal .modal-dialog {
+    width: 90% !important;
+}
+
+#suaVaiTroKyHopModal .modal-dialog, #suaDaiBieuKhoaHopModal .modal-dialog,
+#themoiUserModal .modal-dialog, #suaUserModal .modal-dialog{
+    width: 90% !important;
+}
+
+#themoiUserModal .row>[class*=col-] , #suaUserModal .row>[class*=col-]{
+    margin-bottom: 6px !important;
+}
+
+#img-avatar, #edit-img-avatar {
+    width: 50%;
+}
+.swal-overlay {
+    z-index: 999999999 !important;
+}
+#ds-tailieu .glyphicon-trash, #file-info .glyphicon-remove-circle, .icon-remove-avatar {
+    color: red;
+}
+.img-avatar {
+    width: 35px;
+}
+#file-info .glyphicon-download-alt,#file-info .glyphicon-open {
+    color: #2ecc71;
+}
+
+#ds-tailieu .glyphicon-folder-open {
+    color: rgb(230, 230, 14);
+}
+
+#ds-tailieu .row:hover {
+    background-color:  #e4e4e4;
+    border-radius: 2px;
+}
+.document-content {
+    padding-top: 20px;
+}
+
+.document-content .row>[class*=col-] {
+    margin-bottom: 5px !important;
+}
+/* End tài liệu */
+
+body, html {
+    font-weight: 500 !important;
+    color: #444444 !important;
+}
+
+.voyager .side-menu .navbar-header {
+    background: red !important;
+    border-color: red !important;
+}
+
+.app-container
+{
+    background: #ffffff !important;
+}
+
+.navbar.navbar-default.navbar-fixed-top.navbar-top {
+    background-image: url("../images/banner3.jpg");
+}
+
+.site-footer-right {
+    display: none;
+}
+
+
+.slist .row>[class*=col-] {
+    margin-bottom: 0px !important;
+}
+/* (A) LIST STYLES */
+.slist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .slist li {
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #dfdfdf;
+    background: #f5f5f5;
+  }
+
+  /* (B) DRAG-AND-DROP HINT */
+  .slist li.hint {
+    border: 1px solid #22a7f0;
+    background: #22a7f0 ;
+  }
+  .slist li.active {
+    border: 1px solid #2ecc71;
+    background: #2ecc71;
+  }
+
+  /* (X) DOES NOT MATTER */
+  * {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+  }
