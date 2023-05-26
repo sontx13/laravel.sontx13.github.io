@@ -54,11 +54,11 @@ services:
         networks:
             - app-network
 
- #Docker Networks
-    networks:
-        app-network:
-            driver: bridge
+#Docker Networks
+networks:
+    app-network:
+        driver: bridge
 #Volumes
-    volumes:
-        dbdata:
-            driver: local
+volumes:
+    dbdata:
+        driver: local
