@@ -6,6 +6,9 @@ COPY composer.lock composer.json /var/www/
 # Set working directory
 WORKDIR /var/www
 
+ENV LIBZIP_CFLAGS="-I/usr/include"
+ENV LIBZIP_LIBS="-lzip"
+
 # Install dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
@@ -24,16 +27,13 @@ RUN apt-get update && apt-get install -y \
 # Clear cache
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-ENV LIBZIP_CFLAGS="-I/usr/include"
-ENV LIBZIP_LIBS="-lzip"
-
 # Install extensions
 RUN apt-get update
 RUN apt-get install -y apt-utils
 RUN apt-get install -y libonig-dev
 RUN apt-get install -y libzip-dev
-RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
-RUN docker-php-ext-configure gd --with-gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ --with-png-dir=/usr/include/
+RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl gd
+RUN docker-php-ext-configure gd --with-libdir=lib/x86_64-linux-gnu
 RUN docker-php-ext-install gd
 
 # Install composer
