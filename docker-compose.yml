@@ -1,44 +1,64 @@
 version: '3'
 services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: laravel-app
-    container_name: laravel-app
-    restart: unless-stopped
-    working_dir: /var/www/html
-    volumes:
-      - ./:/var/www/html
+
+ #PHP Service
+    app:
+       build:
+           context: .
+           dockerfile: Dockerfile
+       image: framgia/laravel-php-fpm
+       container_name: project_app
+       restart: always
+       tty: true
+       environment:
+           SERVICE_NAME: project_app
+           SERVICE_TAGS: dev
+       working_dir: /var/www
+       volumes:
+            - ./:/var/www
+            - ./php/php.ini:/usr/local/etc/php/conf.d/local.ini
+       networks:
+            - app-network
+
+ #Nginx Service
+    webserver:
+       image: nginx
+       container_name: project_webserver
+       restart: always
+       tty: true
+       ports:
+           - "80:80"
+           - "443:443"
+       volumes:
+           - ./:/var/www
+           - ./nginx/conf.d/:/etc/nginx/conf.d/
+       networks:
+           - app-network
+
+ #MySQL Service
+    db:
+        image: mysql:5.7.22
+        container_name: project_db
+        restart: always
+        tty: true
+        ports:
+            - "3376:3306"
+        environment:
+            MYSQL_DATABASE: laravel
+            MYSQL_ROOT_PASSWORD: 123456
+            SERVICE_TAGS: dev
+            SERVICE_NAME: mysql
+        volumes:
+            - dbdata:/var/lib/mysql/
+            - ./mysql/my.cnf:/etc/mysql/my.cnf
+        networks:
+            - app-network
+
+ #Docker Networks
     networks:
-      - laravel
-    depends_on:
-      - db
-  db:
-    image: mysql:5.7
-    container_name: mysql-db
-    restart: unless-stopped
-    environment:
-      MYSQL_DATABASE: laravel
-      MYSQL_ROOT_PASSWORD: secret
-      MYSQL_USER: laravel
-      MYSQL_PASSWORD: secret
+        app-network:
+            driver: bridge
+#Volumes
     volumes:
-      - dbdata:/var/lib/mysql
-    networks:
-      - laravel
-  nginx:
-    image: nginx:latest
-    container_name: nginx-server
-    restart: unless-stopped
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx:/etc/nginx/conf.d
-      - ./:/var/www/html
-    networks:
-      - laravel
-networks:
-  laravel:
-volumes:
-  dbdata:
+        dbdata:
+            driver: local
